@@ -7,10 +7,21 @@
     RewriteEngine On
     RewriteCond %{SCRIPT_FILENAME} !-f
     RewriteCond %{SCRIPT_FILENAME} !-d
-    RewriteRule $ pages/home/index.php [NC,L]
-    RewriteRule /$ pages/home/index.php [NC,L]
-	RewriteRule ([a-zA-Z0-9._-]+)$ pages/$1/ [NC,L]
-    RewriteRule /([a-zA-Z0-9._-]+)$ pages/$1/index.php [NC,L]
+	RewriteRule ^(home)$ pages/home/index.php?url=$1 [NC,L]
+    RewriteRule ^(offers)$ pages/offers/index.php?url=$1 [NC,L]
+    RewriteRule ^(referals)$ pages/offers/index.php?url=$1 [NC,L]
+
+    RewriteRule ^(ref)/([a-zA-Z0-9._-]+)$ auth/index.php?url=$1&ref=$2 [NC,L]
+
+    RewriteRule ^(join)$ auth/index.php?url=$1 [NC,L]
+    RewriteRule ^(setup)$ auth/index.php?url=$1 [NC,L]
+    RewriteRule ^(logout)$ auth/index.php?url=$1 [NC,L]
+
+    RewriteRule ^(home)$ pages/home/index.php?url=$1 [NC,L]
+    RewriteRule ^(offers)$ pages/offers/index.php?url=$1 [NC,L]
+    RewriteRule ^(referals)$ pages/offers/index.php?url=$1 [NC,L]
+    RewriteRule ^(wallet)$ pages/index.php?url=$1 [NC,L]
+    RewriteRule ^(account)$ pages/index.php?url=$1 [NC,L]
 
 	RewriteRule ^developer$ https://ikelvin.co [NC,L]
     RewriteCond %{REQUEST_FILENAME}.php -f

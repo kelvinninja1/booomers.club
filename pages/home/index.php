@@ -1,10 +1,14 @@
+
+<?php
+    require ("../../config/env.php");
+?>
 <!doctype html>
 <html lang="en-US">
 <head id="up">
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cashduck.com, the ideal term paper specialist</title>
-    <link rel="shortcut icon" href="/assets/home/img/favicon.ico"
+    <link rel="shortcut icon" href="<?= $base_url ?>/assets/home/img/favicon.ico"
           type="image/x-icon">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -55,8 +59,8 @@
 <!-- /all in one seo pack -->
 <link rel='dns-prefetch' href='//ajax.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel='stylesheet' id='style-css'  href='/assets/home/css/style.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='swiper-style-css'  href='/assets/home/css/plugins/swiper.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='<?= $base_url ?>/assets/home/css/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='swiper-style-css'  href='<?= $base_url ?>/assets/home/css/plugins/swiper.min.css' type='text/css' media='all' />
 </head>
 
 <body class="home page-template page-template-front-page page-template-front-page-php page page-id-2">
@@ -110,7 +114,7 @@
         <div class="nav-wrapper">
             <div class="logo">
                 <a class="logo-link" href="https://booomers.club">
-                    <img class="logo-img" src="/assets/home/img/logo.png"
+                    <img class="logo-img" src="<?= $base_url ?>/assets/home/img/logo.png"
                          alt="booomers.club"/>
                 </a>
             </div>
@@ -173,7 +177,7 @@
             </h2>
             <div class="top-block__btn-container">
                 <div class="top-block__btn1">
-                    <a href="#order-based-model" onclick="gtag('event', 'click_btn_model', {'event_category': 'Order_based_model'});">Order-based model</a>
+                    <a href="#order-based-model" onclick="gtag('event', 'click_btn_model', {'event_category': 'Order_based_model'});">Offer-based model</a>
                 </div>
                 <div class="top-block__btn2">
                     <a href="#referral-based-model"
@@ -183,34 +187,34 @@
         </div>
 
         <div class="top-block__flex-right">
-            <img src="/assets/home/img/top-block.png" alt="booomers.club">
+            <img src="<?= $base_url ?>/assets/home/img/top-block.png" alt="booomers.club">
         </div>
 
         <div class="top-block__advantages">
-            <div class="top-block__advantages-box1">
-                <div class="top-block__advantages-box_content">
-                    <span>Regular tax-free payouts via</span>
-                    <img src="/assets/home/img/paypal.svg" alt="booomers.club">
-                </div>
-            </div>
             <div class="top-block__advantages-box2">
                 <div class="top-block__advantages-box_content">
-                    <span>Years at the top</span>
-                    <p>10+</p>
+                    <span>Regular tax-free payouts via</span>
+                    <img src="<?= $base_url ?>/assets/home/img/cashout.png" alt="booomers.club">
                 </div>
             </div>
+<!--            <div class="top-block__advantages-box2">-->
+<!--                <div class="top-block__advantages-box_content">-->
+<!--                    <span>Years at the top</span>-->
+<!--                    <p>10+</p>-->
+<!--                </div>-->
+<!--            </div>-->
             <div class="top-block__advantages-box3">
                 <div class="top-block__advantages-box_content">
-                    <span>Avg. annual income</span>
-                    <p>$76,000</p>
+                    <span>Money Back Guarantee</span>
+                    <p>Zero Risk</p>
                 </div>
             </div>
-            <div class="top-block__advantages-box4">
-                <div class="top-block__advantages-box_content">
-                    <span>Active partners</span>
-                    <p>700+</p>
-                </div>
-            </div>
+<!--            <div class="top-block__advantages-box4">-->
+<!--                <div class="top-block__advantages-box_content">-->
+<!--                    <span>Active partners</span>-->
+<!--                    <p>700+</p>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
 </section>
@@ -223,42 +227,42 @@
 
         <div class="it-for-you__wrap">
             <div class="it-for-you__el">
-                <img src="/assets/home/img/whats-in-it-for-you-1.svg" alt="booomers.club">
+                <img src="<?= $base_url ?>/assets/home/img/whats-in-it-for-you-1.svg" alt="booomers.club">
                 <div class="it-for-you__el_title">Zero risk</div>
                 <div class="it-for-you__el_desc">
                     We offer industry-leading commissions and <br> require no credit card details, registration or exit <br> fees, upfront payment or money investment.
                 </div>
             </div>
             <div class="it-for-you__el">
-                <img src="/assets/home/img/whats-in-it-for-you-2.svg" alt="booomers.club">
+                <img src="<?= $base_url ?>/assets/home/img/whats-in-it-for-you-2.svg" alt="booomers.club">
                 <div class="it-for-you__el_title">Unlimited earnings</div>
                 <div class="it-for-you__el_desc">
                     You get paid for every conversion with no referral<br> limit and receive a commission every time you or<br> your referrals make a new order on our websites.
                 </div>
             </div>
             <div class="it-for-you__el">
-                <img src="/assets/home/img/whats-in-it-for-you-3.svg" alt="booomers.club">
+                <img src="<?= $base_url ?>/assets/home/img/whats-in-it-for-you-3.svg" alt="booomers.club">
                 <div class="it-for-you__el_title">Passive income</div>
                 <div class="it-for-you__el_desc">
                     On average, each customer places 3+ orders on our<br> websites totaling $200 each, so you have<br> continuous money coming in with minimal activity.
                 </div>
             </div>
             <div class="it-for-you__el">
-                <img src="/assets/home/img/whats-in-it-for-you-4.svg" alt="booomers.club">
+                <img src="<?= $base_url ?>/assets/home/img/whats-in-it-for-you-4.svg" alt="booomers.club">
                 <div class="it-for-you__el_title">Flexible schedule</div>
                 <div class="it-for-you__el_desc">
                     As our affiliate, you can earn money from the<br> comfort of your home or office, in your spare time<br> or during the work hours — it’s all up to you.
                 </div>
             </div>
             <div class="it-for-you__el">
-                <img src="/assets/home/img/whats-in-it-for-you-5.svg" alt="booomers.club">
+                <img src="<?= $base_url ?>/assets/home/img/whats-in-it-for-you-5.svg" alt="booomers.club">
                 <div class="it-for-you__el_title">Payouts whenever needed</div>
                 <div class="it-for-you__el_desc">
                     You can choose to receive income daily, weekly or<br> monthly to PayPal or transfer it to your CashDuck<br> bonus balance and use to pay for next orders.
                 </div>
             </div>
             <div class="it-for-you__el">
-                <img src="/assets/home/img/whats-in-it-for-you-6.svg" alt="booomers.club">
+                <img src="<?= $base_url ?>/assets/home/img/whats-in-it-for-you-6.svg" alt="booomers.club">
                 <div class="it-for-you__el_title">Professional support</div>
                 <div class="it-for-you__el_desc">
                     You get access to a dedicated affiliate manager<br> who will give personalized advice and answer any<br> questions you have about our program.
@@ -274,7 +278,7 @@
             <div class="swiper-wrapper it-for-you__swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="it-for-you__el">
-                        <img src="/assets/home/img/whats-in-it-for-you-1.svg" alt="booomers.club">
+                        <img src="<?= $base_url ?>/assets/home/img/whats-in-it-for-you-1.svg" alt="booomers.club">
                         <div class="it-for-you__el_title">Zero risk</div>
                         <div class="it-for-you__el_desc">
                             We offer industry-leading commissions and require no credit card details, registration or exit fees, upfront payment or money investment.
@@ -283,7 +287,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="it-for-you__el">
-                        <img src="/assets/home/img/whats-in-it-for-you-2.svg" alt="booomers.club">
+                        <img src="<?= $base_url ?>/assets/home/img/whats-in-it-for-you-2.svg" alt="booomers.club">
                         <div class="it-for-you__el_title">Unlimited earnings</div>
                         <div class="it-for-you__el_desc">
                             You get paid for every conversion with no referral limit and receive a commission every time you or your referrals make a new order on our websites.
@@ -292,7 +296,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="it-for-you__el">
-                        <img src="/assets/home/img/whats-in-it-for-you-3.svg" alt="booomers.club">
+                        <img src="<?= $base_url ?>/assets/home/img/whats-in-it-for-you-3.svg" alt="booomers.club">
                         <div class="it-for-you__el_title">Passive income</div>
                         <div class="it-for-you__el_desc">
                             On average, each customer places 3+ orders on our websites totaling $200 each, so you have continuous money coming in with minimal activity.
@@ -301,31 +305,31 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="it-for-you__el">
-                        <img src="/assets/home/img/whats-in-it-for-you-4.svg" alt="booomers.club">
+                        <img src="<?= $base_url ?>/assets/home/img/whats-in-it-for-you-4.svg" alt="booomers.club">
                         <div class="it-for-you__el_title">Flexible schedule</div>
                         <div class="it-for-you__el_desc">
                             As our affiliate, you can earn money from the comfort of your home or office, in your spare time or during the work hours — it’s all up to you.
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="it-for-you__el">
-                        <img src="/assets/home/img/whats-in-it-for-you-5.svg" alt="booomers.club">
-                        <div class="it-for-you__el_title">Payouts whenever needed</div>
-                        <div class="it-for-you__el_desc">
-                            You can choose to receive income daily, weekly or monthly to PayPal or transfer it to your CashDuck bonus balance and use to pay for next orders.
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="it-for-you__el">
-                        <img src="/assets/home/img/whats-in-it-for-you-6.svg" alt="booomers.club">
-                        <div class="it-for-you__el_title">Professional support</div>
-                        <div class="it-for-you__el_desc">
-                            You get access to a dedicated affiliate manager who will give personalized advice and answer any questions you have about our program.
-                        </div>
-                    </div>
-                </div>
+<!--                <div class="swiper-slide">-->
+<!--                    <div class="it-for-you__el">-->
+<!--                        <img src="--><?//= $base_url ?><!--/assets/home/img/whats-in-it-for-you-5.svg" alt="booomers.club">-->
+<!--                        <div class="it-for-you__el_title">Payouts whenever needed</div>-->
+<!--                        <div class="it-for-you__el_desc">-->
+<!--                            You can choose to receive income daily, weekly or monthly to PayPal or transfer it to your CashDuck bonus balance and use to pay for next orders.-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="swiper-slide">-->
+<!--                    <div class="it-for-you__el">-->
+<!--                        <img src="--><?//= $base_url ?><!--/assets/home/img/whats-in-it-for-you-6.svg" alt="booomers.club">-->
+<!--                        <div class="it-for-you__el_title">Professional support</div>-->
+<!--                        <div class="it-for-you__el_desc">-->
+<!--                            You get access to a dedicated affiliate manager who will give personalized advice and answer any questions you have about our program.-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
             <!-- Add Arrows -->
             <div class="it-for-you__button_next"></div>
@@ -391,9 +395,9 @@
                         <p><span>$</span>8,950+</p>
                     </div>
                     <div class="income-model__ribbons-el_desc">
-                        <p><img src="/assets/home/img/ribbons-percent.svg"
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-percent.svg"
                                 alt="booomers.club"><span>Your discount:</span> 35%</p>
-                        <p><img src="/assets/home/img/ribbons-cash.svg"
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-cash.svg"
                                 alt="booomers.club"><span>Your cashback:</span> 15%</p>
                     </div>
                 </div>
@@ -406,9 +410,9 @@
                         <p><span>$</span>4,050+</p>
                     </div>
                     <div class="income-model__ribbons-el_desc">
-                        <p><img src="/assets/home/img/ribbons-percent.svg"
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-percent.svg"
                                 alt="booomers.club"><span>Your discount:</span> 30%</p>
-                        <p><img src="/assets/home/img/ribbons-cash.svg"
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-cash.svg"
                                 alt="booomers.club"><span>Your cashback:</span> 15%</p>
                     </div>
                 </div>
@@ -421,9 +425,9 @@
                         <p><span>$</span>1,770+</p>
                     </div>
                     <div class="income-model__ribbons-el_desc">
-                        <p><img src="/assets/home/img/ribbons-percent.svg"
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-percent.svg"
                                 alt="booomers.club"><span>Your discount:</span> 24%</p>
-                        <p><img src="/assets/home/img/ribbons-cash.svg"
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-cash.svg"
                                 alt="booomers.club"><span>Your cashback:</span> 15%</p>
                     </div>
                 </div>
@@ -454,9 +458,9 @@
                         <p><span>$</span>4,500+</p>
                     </div>
                     <div class="ref-income-model__ribbons-el_desc">
-                        <p><img src="/assets/home/img/ribbons-star.svg"
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-star.svg"
                                 alt="booomers.club"><span>Fixed reward:</span> $2,500</p>
-                        <p><img src="/assets/home/img/ribbons-cash.svg"
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-cash.svg"
                                 alt="booomers.club"><span>Your cashback:</span> 20%</p>
                     </div>
                 </div>
@@ -469,9 +473,9 @@
                         <p><span>$</span>2,100+</p>
                     </div>
                     <div class="ref-income-model__ribbons-el_desc">
-                        <p><img src="/assets/home/img/ribbons-star.svg"
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-star.svg"
                                 alt="booomers.club"><span>Fixed reward:</span> $1,500</p>
-                        <p><img src="/assets/home/img/ribbons-cash.svg"
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-cash.svg"
                                 alt="booomers.club"><span>Your cashback:</span> 15%</p>
                     </div>
                 </div>
@@ -484,9 +488,9 @@
                         <p><span>$</span>800+</p>
                     </div>
                     <div class="ref-income-model__ribbons-el_desc">
-                        <p><img src="/assets/home/img/ribbons-star.svg"
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-star.svg"
                                 alt="booomers.club"><span>Fixed reward:</span> $500</p>
-                        <p><img src="/assets/home/img/ribbons-cash.svg"
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-cash.svg"
                                 alt="booomers.club"><span>Your cashback:</span> 10%</p>
                     </div>
                 </div>
@@ -539,7 +543,7 @@
 
         <div class="how-does-it-work__wrap">
             <div class="how-does-it-work__el">
-                <img src="/assets/home/img/how-does-it-work-1.svg" alt="booomers.club">
+                <img src="<?= $base_url ?>/assets/home/img/how-does-it-work-1.svg" alt="booomers.club">
                 <div class="how-does-it-work__el_sticker">Step 1</div>
                 <div class="how-does-it-work__el_title">Get started</div>
                 <div class="how-does-it-work__el_desc">
@@ -550,7 +554,7 @@
                 </div>
             </div>
             <div class="how-does-it-work__el">
-                <img src="/assets/home/img/how-does-it-work-2.svg" alt="booomers.club">
+                <img src="<?= $base_url ?>/assets/home/img/how-does-it-work-2.svg" alt="booomers.club">
                 <div class="how-does-it-work__el_sticker">Step 2</div>
                 <div class="how-does-it-work__el_title">Promote</div>
                 <div class="how-does-it-work__el_desc">
@@ -562,7 +566,7 @@
                 </div>
             </div>
             <div class="how-does-it-work__el">
-                <img src="/assets/home/img/how-does-it-work-3.svg" alt="booomers.club">
+                <img src="<?= $base_url ?>/assets/home/img/how-does-it-work-3.svg" alt="booomers.club">
                 <div class="how-does-it-work__el_sticker">Step 3</div>
                 <div class="how-does-it-work__el_title">Earn a commission</div>
                 <div class="how-does-it-work__el_desc">
@@ -573,7 +577,7 @@
                 </div>
             </div>
             <div class="how-does-it-work__el">
-                <img src="/assets/home/img/how-does-it-work-4.svg" alt="booomers.club">
+                <img src="<?= $base_url ?>/assets/home/img/how-does-it-work-4.svg" alt="booomers.club">
                 <div class="how-does-it-work__el_sticker">Step 4</div>
                 <div class="how-does-it-work__el_title">Get paid</div>
                 <div class="how-does-it-work__el_desc">
@@ -594,7 +598,7 @@
             <div class="swiper-wrapper how-does-it-work__swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="how-does-it-work__el">
-                        <img src="/assets/home/img/how-does-it-work-1.svg" alt="booomers.club">
+                        <img src="<?= $base_url ?>/assets/home/img/how-does-it-work-1.svg" alt="booomers.club">
                         <div class="how-does-it-work__el_sticker">Step 1</div>
                         <div class="how-does-it-work__el_title">Get started</div>
                         <div class="how-does-it-work__el_desc">
@@ -607,7 +611,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="how-does-it-work__el">
-                        <img src="/assets/home/img/how-does-it-work-2.svg" alt="booomers.club">
+                        <img src="<?= $base_url ?>/assets/home/img/how-does-it-work-2.svg" alt="booomers.club">
                         <div class="how-does-it-work__el_sticker">Step 2</div>
                         <div class="how-does-it-work__el_title">Promote</div>
                         <div class="how-does-it-work__el_desc">
@@ -621,7 +625,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="how-does-it-work__el">
-                        <img src="/assets/home/img/how-does-it-work-3.svg" alt="booomers.club">
+                        <img src="<?= $base_url ?>/assets/home/img/how-does-it-work-3.svg" alt="booomers.club">
                         <div class="how-does-it-work__el_sticker">Step 3</div>
                         <div class="how-does-it-work__el_title">Earn a commission</div>
                         <div class="how-does-it-work__el_desc">
@@ -634,7 +638,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="how-does-it-work__el">
-                        <img src="/assets/home/img/how-does-it-work-4.svg" alt="booomers.club">
+                        <img src="<?= $base_url ?>/assets/home/img/how-does-it-work-4.svg" alt="booomers.club">
                         <div class="how-does-it-work__el_sticker">Step 4</div>
                         <div class="how-does-it-work__el_title">Get paid</div>
                         <div class="how-does-it-work__el_desc">
@@ -664,7 +668,7 @@
         <div class="swiper-container testimonials__slider_wrap">
             <div class="swiper-wrapper">
                 <div class="swiper-slide testimonials__slide_content-wrap">
-                    <img src="/assets/home/img/testimonials-slide-1.png"
+                    <img src="<?= $base_url ?>/assets/home/img/testimonials-slide-1.png"
                          alt="booomers.club">
 
                     <div class="testimonials__slide_comment-wrap">
@@ -680,7 +684,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide testimonials__slide_content-wrap">
-                    <img src="/assets/home/img/testimonials-slide-2.png"
+                    <img src="<?= $base_url ?>/assets/home/img/testimonials-slide-2.png"
                          alt="booomers.club">
 
                     <div class="testimonials__slide_comment-wrap">
@@ -695,7 +699,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide testimonials__slide_content-wrap">
-                    <img src="/assets/home/img/testimonials-slide-3.png"
+                    <img src="<?= $base_url ?>/assets/home/img/testimonials-slide-3.png"
                          alt="booomers.club">
 
                     <div class="testimonials__slide_comment-wrap">
@@ -710,7 +714,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide testimonials__slide_content-wrap">
-                    <img src="/assets/home/img/testimonials-slide-4.png"
+                    <img src="<?= $base_url ?>/assets/home/img/testimonials-slide-4.png"
                          alt="booomers.club">
 
                     <div class="testimonials__slide_comment-wrap">
@@ -726,7 +730,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide testimonials__slide_content-wrap">
-                    <img src="/assets/home/img/testimonials-slide-5.png"
+                    <img src="<?= $base_url ?>/assets/home/img/testimonials-slide-5.png"
                          alt="booomers.club">
 
                     <div class="testimonials__slide_comment-wrap">
@@ -823,10 +827,10 @@
             <div class="testimonials__questions_contact">
                 <a href="mailto:support@booomers.club"
                    onclick="gtag('event', 'Support_email', { 'event_category':'Support_email'});"><img
-                            src="/assets/home/img/message-icon.svg"
+                            src="<?= $base_url ?>/assets/home/img/message-icon.svg"
                             alt="booomers.club">support@booomers.club</a>
                 <a href="tel:+13239772810" onclick="gtag('event', 'Phone_number', { 'event_category':'Phone_number'});"><img
-                            src="/assets/home/img/phone-icon.svg"
+                            src="<?= $base_url ?>/assets/home/img/phone-icon.svg"
                             alt="booomers.club">+1 (323) 977 2810</a>
             </div>
         </div>
@@ -854,7 +858,7 @@
         <div class="footer__nav-wrap">
             <div class="footer__logo">
                 <a class="footer__logo_link" href="#up">
-                  <img class="footer__logo_img" src="/assets/home/img/logo-footer.png"
+                  <img class="footer__logo_img" src="<?= $base_url ?>/assets/home/img/logo-footer.png"
                        alt="booomers.club"/>
                 </a>
             </div>
@@ -880,8 +884,8 @@
 
 
 <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?ver=3.3.1'></script>
-<script type='text/javascript' src='/assets/home/js/plugins/swiper.min.js'></script>
-<script type='text/javascript' src='/assets/home/js/main.min.js'></script>
+<script type='text/javascript' src='<?= $base_url ?>/assets/home/js/plugins/swiper.min.js'></script>
+<script type='text/javascript' src='<?= $base_url ?>/assets/home/js/main.min.js'></script>
 
 </body>
 </html>
