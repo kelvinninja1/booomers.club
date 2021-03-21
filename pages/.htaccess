@@ -7,7 +7,7 @@
     RewriteEngine On
     RewriteCond %{SCRIPT_FILENAME} !-f
     RewriteCond %{SCRIPT_FILENAME} !-d
-	  RewriteRule ^(login)$ auth/index.php?url=$1 [NC,L]
+	RewriteRule ^(login)$ auth/index.php?url=$1 [NC,L]
     RewriteRule ^(recover)$ auth/index.php?url=$1 [NC,L]
 
     RewriteRule ^(ref)/([a-zA-Z0-9._-]+)$ auth/index.php?url=$1&ref=$2 [NC,L]
