@@ -1,0 +1,38 @@
+<?php
+
+
+class AppLayout extends Frame
+{
+    public $template = "../../layout/App/index.phtml";
+    public $innerTemplates = [
+        'AppHead'=>"../../layout/AppHead/index.phtml",
+        'AppBody'=>"../../layout/AppBody/index.phtml",
+        'AppContainer'=>"../../layout/AppContainer/index.phtml",
+        'AppScripts'=>"../../layout/AppScripts/index.phtml",
+        'AppHeader'=>"../../layout/AppHeader/index.phtml",
+        'AppAction'=>"../../layout/AppAction/index.phtml",
+        'AppMain'=>"../../layout/AppMain/index.phtml",
+        'AppSideBar'=>"../../layout/AppSideBar/index.phtml",
+        'AppMainOuter'=>"../../layout/AppMainOuter/index.phtml",
+        'AppMainInner'=>"../../layout/AppMainInner/index.phtml",
+        'AppFooter'=>"../../layout/AppFooter/index.phtml",
+        'AppPageTitle'=>"../../layout/AppPageTitle/index.phtml",
+        'AppContents'=>"../../layout/AppContents/index.phtml"
+    ];
+    public $props = [
+    'AppHead' =>['pageTitle'=> "Welcome"],
+    'AppBody'=>[],
+    'AppContainer'=>[],
+    'AppScripts'=>[],
+    'AppHeader'=>[],
+    'AppAction'=>[],
+    'AppMain'=>[],
+    'AppSideBar'=>[],
+    'AppMainOuter'=>[],
+    'AppMainInner'=>[],
+    'AppFooter'=>[],
+    'AppPageTitle'=>[],
+    'AppContents'=>[]
+];
+
+}
