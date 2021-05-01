@@ -18,8 +18,9 @@
     RewriteRule ^(logout)$ auth/index.php?url=$1 [NC,L]
 
     RewriteRule ^(home)$ pages/home/index.php?url=$1 [NC,L]
+    RewriteRule ^(dashboard)$ pages/dashboard/index.php?url=$1 [NC,L]
     RewriteRule ^(offers)$ pages/offers/index.php?url=$1 [NC,L]
-    RewriteRule ^(referals)$ pages/offers/index.php?url=$1 [NC,L]
+    RewriteRule ^(referrals)$ pages/referrals/index.php?url=$1 [NC,L]
     RewriteRule ^(wallet)$ pages/index.php?url=$1 [NC,L]
     RewriteRule ^(account)$ pages/index.php?url=$1 [NC,L]
 
