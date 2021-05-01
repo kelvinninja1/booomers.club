@@ -1,0 +1,10 @@
+<?php
+require_once ("../../frame.inc");
+
+
+class AppPage extends Frame
+{
+ public $template = "AppPage/index.phtml";
+ public $innerTemplates = ['head' => "AppHead/index.phtml", 'body' => "AppBody/index.phtml", 'content' => "AppContent/index.phtml"];
+ 
+}
