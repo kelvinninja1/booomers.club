@@ -11,11 +11,12 @@
     RewriteRule ^(offers)$ pages/offers/index.php?url=$1 [NC,L]
     RewriteRule ^(referals)$ pages/offers/index.php?url=$1 [NC,L]
 
-    RewriteRule ^(ref)/([a-zA-Z0-9._-]+)$ auth/index.php?url=$1&ref=$2 [NC,L]
+    RewriteRule ^(ref)/([a-zA-Z0-9._-]+)$ pages/auth/index.php?url=$1&ref=$2 [NC,L]
 
-    RewriteRule ^(join)$ auth/index.php?url=$1 [NC,L]
-    RewriteRule ^(setup)$ auth/index.php?url=$1 [NC,L]
-    RewriteRule ^(logout)$ auth/index.php?url=$1 [NC,L]
+    RewriteRule ^(join)$ pages/auth/index.php?url=$1 [NC,L]
+    RewriteRule ^(setup)$ pages/auth/index.php?url=$1 [NC,L]
+    RewriteRule ^(login)$ pages/auth/index.php?url=$1 [NC,L]
+    RewriteRule ^(logout)$ pages/auth/index.php?url=$1 [NC,L]
 
     RewriteRule ^(home)$ pages/home/index.php?url=$1 [NC,L]
     RewriteRule ^(dashboard)$ pages/dashboard/index.php?url=$1 [NC,L]
