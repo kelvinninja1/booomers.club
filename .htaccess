@@ -22,8 +22,8 @@
     RewriteRule ^(dashboard)$ pages/dashboard/index.php?url=$1 [NC,L]
     RewriteRule ^(offers)$ pages/offers/index.php?url=$1 [NC,L]
     RewriteRule ^(referrals)$ pages/referrals/index.php?url=$1 [NC,L]
-    RewriteRule ^(wallet)$ pages/index.php?url=$1 [NC,L]
-    RewriteRule ^(account)$ pages/index.php?url=$1 [NC,L]
+    RewriteRule ^(wallet)$ pages/wallet/index.php?url=$1 [NC,L]
+    RewriteRule ^(account)$ pages/account/index.php?url=$1 [NC,L]
 
 	RewriteRule ^developer$ https://ikelvin.co [NC,L]
     RewriteCond %{REQUEST_FILENAME}.php -f
