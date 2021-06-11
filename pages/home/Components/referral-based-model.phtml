@@ -1,0 +1,98 @@
+<!--REFERRAL-INCOME-MODEL-->
+<section id="referral-based-model" class="ref-income-model">
+    <div class="container">
+        <h3 class="ref-income-model__title">Referral Income Model</h3>
+        <h4 class="ref-income-model__desc">Calculate how much you will earn as a CashDuck Referral Partner.</h4>
+    </div>
+    <div class="container flex-container income-model__container">
+        <div class="ref-income-model__flex-left ref-income-model__flex-left">
+            <div class="ref-income-model__ribbons_desc">
+                Under this model, you will get up to <span>$2,500 one-time reward</span> and up to <span>20% cashback</span>
+                on each order made by a referral. The more students you bring in, the higher your income is.
+            </div>
+            <div class="ref-income-model__ribbons-wrap">
+                <div class="ref-income-model__ribbons-el ref-income-model__ribbons-el-animate">
+                    <div class="ref-income-model__ribbons-el_title">
+                        <p>Pro</p>
+                        <p><span>Students referred:</span> 50+</p>
+                    </div>
+                    <div class="ref-income-model__ribbons-el_cash">
+                        <p><span>$</span>4,500+</p>
+                    </div>
+                    <div class="ref-income-model__ribbons-el_desc">
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-star.svg"
+                                alt="booomers.club"><span>Fixed reward:</span> $2,500</p>
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-cash.svg"
+                                alt="booomers.club"><span>Your cashback:</span> 20%</p>
+                    </div>
+                </div>
+                <div class="ref-income-model__ribbons-el">
+                    <div class="ref-income-model__ribbons-el_title">
+                        <p>Jump Start</p>
+                        <p><span>Students referred:</span> 30+</p>
+                    </div>
+                    <div class="ref-income-model__ribbons-el_cash">
+                        <p><span>$</span>2,100+</p>
+                    </div>
+                    <div class="ref-income-model__ribbons-el_desc">
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-star.svg"
+                                alt="booomers.club"><span>Fixed reward:</span> $1,500</p>
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-cash.svg"
+                                alt="booomers.club"><span>Your cashback:</span> 15%</p>
+                    </div>
+                </div>
+                <div class="ref-income-model__ribbons-el">
+                    <div class="ref-income-model__ribbons-el_title">
+                        <p>Beginner</p>
+                        <p><span>Students referred:</span> 10+</p>
+                    </div>
+                    <div class="ref-income-model__ribbons-el_cash">
+                        <p><span>$</span>800+</p>
+                    </div>
+                    <div class="ref-income-model__ribbons-el_desc">
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-star.svg"
+                                alt="booomers.club"><span>Fixed reward:</span> $500</p>
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-cash.svg"
+                                alt="booomers.club"><span>Your cashback:</span> 10%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ref-income-model__flex-right ref-income-model__flex-right">
+
+            <div class="ref-income-model__range">
+                <div class="ref-income-model__range_title">Find out your income</div>
+                <div class="ref-income-model__range_desc">Choose the number of customers you refer per month:</div>
+
+                <div class="ref-income-model__range-slider">
+                    <input id="ref-income-model-range" class="ref-income-model__range-slider_range" type="range" value="1"
+                           min="1" max="100" oninput="refRangeIncome()">
+                    <div class="ref-income-model__range_output-wrap">
+
+                        <output id="ref-income-model-range-output" class="ref-income-model__range_output" name="output"
+                                for="range">
+                            1
+                        </output>
+
+
+                    </div>
+                    <div class="ref-income-model__range-slider-value_wrap">
+                        <span class="ref-income-model__range-slider_value">1</span>
+                        <span class="ref-income-model__range-slider_value">100</span>
+                    </div>
+                </div>
+
+                <div class="ref-income-model__range-bottom_wrap">
+                    <div class="ref-income-model__range-bottom_price">
+                        <p class="ref-income-model__range-bottom_price-title">You will earn:</p>
+                        <p id="ref-income-model-count" class="ref-income-model__range-bottom_price-count"><span>$</span>60</p>
+                    </div>
+                    <div class="ref-income-model__range-bottom_btn">
+                        <a href="#join-now-scroll" onclick="gtag('event', 'apply_now', {'event_category': 'Order_based_model'});">Apply now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

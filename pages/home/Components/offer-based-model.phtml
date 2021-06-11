@@ -1,0 +1,95 @@
+<!--OFFER-BASED-INCOME-MODEL-->
+<section id="offer-based-model" class="income-model">
+    <div class="container">
+        <h3 class="income-model__title">Order-Based Income Model</h3>
+        <h4 class="income-model__desc">Calculate how much you will earn as a CashDuck Order-Based Partner.</h4>
+    </div>
+    <div class="container flex-container income-model__container">
+        <div class="income-model__flex-left">
+            <div class="income-model__range">
+                <div class="income-model__range_title">Find out your income</div>
+                <div class="income-model__range_desc">Choose the number of orders to make per month:</div>
+
+                <div class="income-model__range-slider">
+                    <input id="income-model-range" class="income-model__range-slider_range" type="range" value="1"
+                           min="1" max="250" oninput="rangeIncome()">
+                    <div class="income-model__range-slider_range-line"></div>
+                    <div class="income-model__range_output-wrap">
+                        <output id="income-model-range-output" class="income-model__range_output" name="output"
+                                for="range">
+                            1
+                        </output>
+                    </div>
+                    <div class="income-model__range-slider-value_wrap">
+                        <span class="income-model__range-slider_value">1</span>
+                        <span class="income-model__range-slider_value">250</span>
+                    </div>
+                </div>
+
+                <div class="income-model__range-bottom_wrap">
+                    <div class="income-model__range-bottom_price">
+                        <p class="income-model__range-bottom_price-title">You will earn:</p>
+                        <p id="income-model-count" class="income-model__range-bottom_price-count"><span>$</span>5</p>
+                    </div>
+                    <div class="income-model__range-bottom_btn">
+                        <a href="#join-now-scroll" onclick="gtag('event', 'apply_now', {'event_category': 'Order_based_model'});">Apply now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="income-model__flex-right">
+            <div class="income-model__ribbons_desc">
+                Under this model, you will get up to <span>35% discount</span> along with <span>15% cashback</span>
+                on each order made on our websites. The more orders you make, the higher your discount is.
+            </div>
+            <div class="income-model__ribbons-wrap">
+                <div class="income-model__ribbons-el income-model__ribbons-el-animate">
+                    <div class="income-model__ribbons-el_title">
+                        <p>Pro</p>
+                        <p><span>Orders made:</span> 200+</p>
+                    </div>
+                    <div class="income-model__ribbons-el_cash">
+                        <p><span>$</span>8,950+</p>
+                    </div>
+                    <div class="income-model__ribbons-el_desc">
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-percent.svg"
+                                alt="booomers.club"><span>Your discount:</span> 35%</p>
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-cash.svg"
+                                alt="booomers.club"><span>Your cashback:</span> 15%</p>
+                    </div>
+                </div>
+                <div class="income-model__ribbons-el">
+                    <div class="income-model__ribbons-el_title">
+                        <p>Jump Start</p>
+                        <p><span>Orders made:</span> 100+</p>
+                    </div>
+                    <div class="income-model__ribbons-el_cash">
+                        <p><span>$</span>4,050+</p>
+                    </div>
+                    <div class="income-model__ribbons-el_desc">
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-percent.svg"
+                                alt="booomers.club"><span>Your discount:</span> 30%</p>
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-cash.svg"
+                                alt="booomers.club"><span>Your cashback:</span> 15%</p>
+                    </div>
+                </div>
+                <div class="income-model__ribbons-el">
+                    <div class="income-model__ribbons-el_title">
+                        <p>Beginner</p>
+                        <p><span>Orders made:</span> 50+</p>
+                    </div>
+                    <div class="income-model__ribbons-el_cash">
+                        <p><span>$</span>1,770+</p>
+                    </div>
+                    <div class="income-model__ribbons-el_desc">
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-percent.svg"
+                                alt="booomers.club"><span>Your discount:</span> 24%</p>
+                        <p><img src="<?= $base_url ?>/assets/home/img/ribbons-cash.svg"
+                                alt="booomers.club"><span>Your cashback:</span> 15%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
